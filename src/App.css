@@ -1,0 +1,111 @@
+body{
+  background-color: hsl(0, 1%, 30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.to-do-list{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+h1{
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color:white;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+
+}
+.add-button{
+  background-color: hsl(125, 47%, 54%);
+  margin-left: 20px;
+}
+.add-button:hover{
+  background-color: hsl(125, 47%, 44%);
+}
+.delete-button{
+  background-color: hsl(10, 90%, 50%);
+}
+.delete-button:hover{
+  background-color: hsl(10, 90%, 40%);
+}
+.edit-button{
+  background-color: hsl(258, 90%, 50%);
+  margin: 50px; 
+}
+.edit-button:hover{
+  background-color: hsl(10, 90%, 40%); 
+}
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: hsl(0, 0%, 0%, 0.5);
+}
+ul {
+  padding: 10px;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: hsl(0, 0%, 97%);
+  margin: 10px 0;
+  border: 3px solid hsl(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+li:hover {
+  transform: scale(1.03);
+  background-color: #d1d6da;
+}
+li.completed {
+  color: #3b3737;
+  background-color: #888c8f;
+}
+
+li.completed:hover {
+  background-color: #989898;
+}
+.text{
+  flex: 1;
+}
+.todo-content{
+  flex-grow: 1;
+}
+.delete-button{
+  padding: 10px 20px;
+  font-size: 1.7rem;
+  margin-left: 10px;
+}
+.heading{
+  text-decoration: underline;
+  animation: slideIn 3s ease-in-out 1s normal;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-70%);
+  }
+  50%{
+      transform: translateX(70%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
